@@ -9,20 +9,16 @@ Plain, current how-to guides for the things every Suffolk Law student has to do,
 | | What it is | Where |
 |---|---|---|
 | **Guides** | Step-by-step guides: booking rooms, SBA forms, research accounts, registration and more. Each one cites the official source and says when someone last walked through it. | [`guides/`](guides/) |
-| **Calendar feeds** | Suffolk Law's academic calendar (classes begin and end, add/drop, exams, commencement) as a feed for Google Calendar, Outlook or Apple Calendar. MPRE dates and LITSA events are next. | [`feeds/`](feeds/) |
+| **Calendar feeds** | Suffolk Law's academic calendar (classes, add/drop, exams, holidays, recesses, reading and make-up days, commencement) as a feed for Google Calendar, Outlook or Apple Calendar. MPRE dates and LITSA events are next. | [`feeds/`](feeds/) |
 | **Character & fitness kit** | A spreadsheet for every address, job, school, legal matter and document your bar application will ask about, with gap checks and a law-school-application check. | [`cf-kit/`](cf-kit/) |
 
 ## Subscribe to the academic calendar
 
-Subscribing (rather than downloading) means your calendar updates itself when we update the feed.
+Go to **[suffolklitsa.org/calendar](https://suffolklitsa.org/calendar/)** and pick Google, Apple or Outlook. Subscribing (rather than downloading) means your calendar updates itself when we update the feed.
 
-- **Google Calendar:** Other calendars → **+** → From URL, and paste the feed link below.
-- **Outlook:** Add calendar → Subscribe from web.
-- **Apple Calendar:** File → New Calendar Subscription.
+For any other app, subscribe by URL: `https://suffolklitsa.org/feeds/academic-calendar.ics`.
 
-Feed link (once published): `https://raw.githubusercontent.com/suffolklitsa/suffolk-guides/main/feeds/academic-calendar.ics`. A shorter link on suffolklitsa.org is coming.
-
-The feed is unofficial. Dates come from Suffolk Law's academic calendar page and are re-checked weekly; the page itself is the authority.
+The feed is unofficial; Suffolk Law's academic calendar page is the authority. The main dates are imported from that page (`data/academic-calendar.json`). Holidays, recesses, schedule swaps and make-up days are transcribed by hand from the same calendar (`data/academic-calendar-extra.json`), so recheck them when Suffolk posts a new version.
 
 ## Unofficial, and how we keep it accurate
 
