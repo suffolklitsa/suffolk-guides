@@ -6,7 +6,18 @@ METHOD:PUBLISH
 X-WR-CALNAME:Suffolk Law academic calendar (unofficial)
 X-WR-TIMEZONE:America/New_York
 BEGIN:VEVENT
-UID:ee4793aceeaa146acc4d@suffolk-guides.litsa
+UID:9db0004482035c92052b@suffolk-guides.litsa
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260818
+DTEND;VALUE=DATE:20260821
+SUMMARY:Fall 2026: Orientation
+TRANSP:TRANSPARENT
+DESCRIPTION:From Suffolk Law academic calendar: https://www.suffolk.edu/law
+ /academics-clinics/academic-resources/academic-calendar---law. Unofficial\
+ ; check the source.
+END:VEVENT
+BEGIN:VEVENT
+UID:75c354ffb942537f3d54@suffolk-guides.litsa
 DTSTAMP:20260101T000000Z
 DTSTART;VALUE=DATE:20260824
 DTEND;VALUE=DATE:20260825
@@ -17,7 +28,7 @@ DESCRIPTION:From Suffolk Law academic calendar: https://www.suffolk.edu/law
  ; check the source.
 END:VEVENT
 BEGIN:VEVENT
-UID:b750e0616ac03d01e2a6@suffolk-guides.litsa
+UID:c018e0c5b5a69c18b5a0@suffolk-guides.litsa
 DTSTAMP:20260101T000000Z
 DTSTART;VALUE=DATE:20260828
 DTEND;VALUE=DATE:20260829
@@ -28,7 +39,18 @@ DESCRIPTION:From Suffolk Law academic calendar: https://www.suffolk.edu/law
  ; check the source.
 END:VEVENT
 BEGIN:VEVENT
-UID:2a0919cd07ad8818f535@suffolk-guides.litsa
+UID:a749bea47125e29ef667@suffolk-guides.litsa
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260907
+DTEND;VALUE=DATE:20260908
+SUMMARY:Fall 2026: Labor Day\, university holiday (no classes)
+TRANSP:TRANSPARENT
+DESCRIPTION:From Suffolk Law academic calendar: https://www.suffolk.edu/law
+ /academics-clinics/academic-resources/academic-calendar---law. Unofficial\
+ ; check the source.
+END:VEVENT
+BEGIN:VEVENT
+UID:08f89ee57c8eb92b99ad@suffolk-guides.litsa
 DTSTAMP:20260101T000000Z
 DTSTART;VALUE=DATE:20261001
 DTEND;VALUE=DATE:20261002
@@ -39,7 +61,95 @@ DESCRIPTION:From Suffolk Law academic calendar: https://www.suffolk.edu/law
  ; check the source.
 END:VEVENT
 BEGIN:VEVENT
-UID:97e27f83906b4eed1593@suffolk-guides.litsa
+UID:7c309f33ff8b56faaf9e@suffolk-guides.litsa
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20261005
+DTEND;VALUE=DATE:20261018
+SUMMARY:Fall 2026: Midterms
+TRANSP:TRANSPARENT
+DESCRIPTION:From Suffolk Law academic calendar: https://www.suffolk.edu/law
+ /academics-clinics/academic-resources/academic-calendar---law. Unofficial\
+ ; check the source.
+END:VEVENT
+BEGIN:VEVENT
+UID:dfd40ff70e5ed0c324ef@suffolk-guides.litsa
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20261012
+DTEND;VALUE=DATE:20261013
+SUMMARY:Fall 2026: Fall Holiday\, university holiday (no classes)
+TRANSP:TRANSPARENT
+DESCRIPTION:From Suffolk Law academic calendar: https://www.suffolk.edu/law
+ /academics-clinics/academic-resources/academic-calendar---law. Unofficial\
+ ; check the source.
+END:VEVENT
+BEGIN:VEVENT
+UID:0f5aa6404aff2f5116a4@suffolk-guides.litsa
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20261102
+DTEND;VALUE=DATE:20261103
+SUMMARY:Fall 2026: Last day to apply for January 2027 graduation
+TRANSP:TRANSPARENT
+DESCRIPTION:From Suffolk Law academic calendar: https://www.suffolk.edu/law
+ /academics-clinics/academic-resources/academic-calendar---law. Unofficial\
+ ; check the source.
+END:VEVENT
+BEGIN:VEVENT
+UID:26675065dfd8e2734ddc@suffolk-guides.litsa
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20261106
+DTEND;VALUE=DATE:20261107
+SUMMARY:Fall 2026: Evening make-up classes
+TRANSP:TRANSPARENT
+DESCRIPTION:From Suffolk Law academic calendar: https://www.suffolk.edu/law
+ /academics-clinics/academic-resources/academic-calendar---law. Unofficial\
+ ; check the source.
+END:VEVENT
+BEGIN:VEVENT
+UID:86efe919bacf64a55580@suffolk-guides.litsa
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20261107
+DTEND;VALUE=DATE:20261108
+SUMMARY:Fall 2026: Class make-up day
+TRANSP:TRANSPARENT
+DESCRIPTION:From Suffolk Law academic calendar: https://www.suffolk.edu/law
+ /academics-clinics/academic-resources/academic-calendar---law. Unofficial\
+ ; check the source.
+END:VEVENT
+BEGIN:VEVENT
+UID:a1914be272a42f09e31b@suffolk-guides.litsa
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20261110
+DTEND;VALUE=DATE:20261111
+SUMMARY:Fall 2026: Classes follow a Wednesday schedule
+TRANSP:TRANSPARENT
+DESCRIPTION:From Suffolk Law academic calendar: https://www.suffolk.edu/law
+ /academics-clinics/academic-resources/academic-calendar---law. Unofficial\
+ ; check the source.
+END:VEVENT
+BEGIN:VEVENT
+UID:407e7f813fdd0cfdd20b@suffolk-guides.litsa
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20261111
+DTEND;VALUE=DATE:20261112
+SUMMARY:Fall 2026: Veterans Day\, university holiday (no classes)
+TRANSP:TRANSPARENT
+DESCRIPTION:From Suffolk Law academic calendar: https://www.suffolk.edu/law
+ /academics-clinics/academic-resources/academic-calendar---law. Unofficial\
+ ; check the source.
+END:VEVENT
+BEGIN:VEVENT
+UID:e5c44349b4246103cd9f@suffolk-guides.litsa
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20261125
+DTEND;VALUE=DATE:20261128
+SUMMARY:Fall 2026: Thanksgiving recess
+TRANSP:TRANSPARENT
+DESCRIPTION:From Suffolk Law academic calendar: https://www.suffolk.edu/law
+ /academics-clinics/academic-resources/academic-calendar---law. Unofficial\
+ ; check the source.
+END:VEVENT
+BEGIN:VEVENT
+UID:f2a52b0a68481fd955a5@suffolk-guides.litsa
 DTSTAMP:20260101T000000Z
 DTSTART;VALUE=DATE:20261130
 DTEND;VALUE=DATE:20261201
@@ -50,7 +160,18 @@ DESCRIPTION:From Suffolk Law academic calendar: https://www.suffolk.edu/law
  ; check the source.
 END:VEVENT
 BEGIN:VEVENT
-UID:00242dbdeecde6f141a8@suffolk-guides.litsa
+UID:38fdeae6aa9997f4eaa4@suffolk-guides.litsa
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20261201
+DTEND;VALUE=DATE:20261204
+SUMMARY:Fall 2026: Reading days
+TRANSP:TRANSPARENT
+DESCRIPTION:From Suffolk Law academic calendar: https://www.suffolk.edu/law
+ /academics-clinics/academic-resources/academic-calendar---law. Unofficial\
+ ; check the source.
+END:VEVENT
+BEGIN:VEVENT
+UID:a506ff9fdbeb24238f85@suffolk-guides.litsa
 DTSTAMP:20260101T000000Z
 DTSTART;VALUE=DATE:20261204
 DTEND;VALUE=DATE:20261205
@@ -61,7 +182,7 @@ DESCRIPTION:From Suffolk Law academic calendar: https://www.suffolk.edu/law
  ; check the source.
 END:VEVENT
 BEGIN:VEVENT
-UID:a8efccefed51358ead42@suffolk-guides.litsa
+UID:9e1b125b67618eb3b846@suffolk-guides.litsa
 DTSTAMP:20260101T000000Z
 DTSTART;VALUE=DATE:20261217
 DTEND;VALUE=DATE:20261218
@@ -72,7 +193,52 @@ DESCRIPTION:From Suffolk Law academic calendar: https://www.suffolk.edu/law
  ; check the source.
 END:VEVENT
 BEGIN:VEVENT
-UID:24b589da5f7f27350091@suffolk-guides.litsa
+UID:44805c908020e82d9031@suffolk-guides.litsa
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20261218
+DTEND;VALUE=DATE:20261219
+SUMMARY:Fall 2026: Exam snow make-up day
+TRANSP:TRANSPARENT
+DESCRIPTION:From Suffolk Law academic calendar: https://www.suffolk.edu/law
+ /academics-clinics/academic-resources/academic-calendar---law. Unofficial\
+ ; check the source.
+END:VEVENT
+BEGIN:VEVENT
+UID:d38630625703aba2126b@suffolk-guides.litsa
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270111
+DTEND;VALUE=DATE:20270116
+SUMMARY:Spring 2027: January Intersession
+TRANSP:TRANSPARENT
+DESCRIPTION:From Suffolk Law academic calendar: https://www.suffolk.edu/law
+ /academics-clinics/academic-resources/academic-calendar---law. Unofficial\
+ ; check the source.
+END:VEVENT
+BEGIN:VEVENT
+UID:dd35990cef57b640b1e0@suffolk-guides.litsa
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270116
+DTEND;VALUE=DATE:20270117
+SUMMARY:Spring 2027: Intersession make-up day
+TRANSP:TRANSPARENT
+DESCRIPTION:From Suffolk Law academic calendar: https://www.suffolk.edu/law
+ /academics-clinics/academic-resources/academic-calendar---law. Unofficial\
+ ; check the source.
+END:VEVENT
+BEGIN:VEVENT
+UID:386f8bc81b804fde9da8@suffolk-guides.litsa
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270118
+DTEND;VALUE=DATE:20270119
+SUMMARY:Spring 2027: Martin Luther King Jr. Day\, university holiday (no cl
+ asses)
+TRANSP:TRANSPARENT
+DESCRIPTION:From Suffolk Law academic calendar: https://www.suffolk.edu/law
+ /academics-clinics/academic-resources/academic-calendar---law. Unofficial\
+ ; check the source.
+END:VEVENT
+BEGIN:VEVENT
+UID:3842e0d9678151ce9207@suffolk-guides.litsa
 DTSTAMP:20260101T000000Z
 DTSTART;VALUE=DATE:20270119
 DTEND;VALUE=DATE:20270120
@@ -83,7 +249,7 @@ DESCRIPTION:From Suffolk Law academic calendar: https://www.suffolk.edu/law
  ; check the source.
 END:VEVENT
 BEGIN:VEVENT
-UID:2852ffd26e2ca282e804@suffolk-guides.litsa
+UID:74f856415c02e481dbe4@suffolk-guides.litsa
 DTSTAMP:20260101T000000Z
 DTSTART;VALUE=DATE:20270125
 DTEND;VALUE=DATE:20270126
@@ -94,7 +260,7 @@ DESCRIPTION:From Suffolk Law academic calendar: https://www.suffolk.edu/law
  ; check the source.
 END:VEVENT
 BEGIN:VEVENT
-UID:3825412c5b03a851fe46@suffolk-guides.litsa
+UID:8bc34f3970ef6ea99bbe@suffolk-guides.litsa
 DTSTAMP:20260101T000000Z
 DTSTART;VALUE=DATE:20270205
 DTEND;VALUE=DATE:20270206
@@ -105,7 +271,84 @@ DESCRIPTION:From Suffolk Law academic calendar: https://www.suffolk.edu/law
  ; check the source.
 END:VEVENT
 BEGIN:VEVENT
-UID:741b15e897f9c059de3f@suffolk-guides.litsa
+UID:435ef71266c99b9efa36@suffolk-guides.litsa
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270215
+DTEND;VALUE=DATE:20270216
+SUMMARY:Spring 2027: Presidents' Day\, university holiday (no classes)
+TRANSP:TRANSPARENT
+DESCRIPTION:From Suffolk Law academic calendar: https://www.suffolk.edu/law
+ /academics-clinics/academic-resources/academic-calendar---law. Unofficial\
+ ; check the source.
+END:VEVENT
+BEGIN:VEVENT
+UID:84a294396b27975dd627@suffolk-guides.litsa
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270216
+DTEND;VALUE=DATE:20270217
+SUMMARY:Spring 2027: Classes follow a Monday schedule
+TRANSP:TRANSPARENT
+DESCRIPTION:From Suffolk Law academic calendar: https://www.suffolk.edu/law
+ /academics-clinics/academic-resources/academic-calendar---law. Unofficial\
+ ; check the source.
+END:VEVENT
+BEGIN:VEVENT
+UID:b68ad58dfcb8c3a8441a@suffolk-guides.litsa
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270216
+DTEND;VALUE=DATE:20270228
+SUMMARY:Spring 2027: Midterms
+TRANSP:TRANSPARENT
+DESCRIPTION:From Suffolk Law academic calendar: https://www.suffolk.edu/law
+ /academics-clinics/academic-resources/academic-calendar---law. Unofficial\
+ ; check the source.
+END:VEVENT
+BEGIN:VEVENT
+UID:0b4164a67481e260b60f@suffolk-guides.litsa
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270315
+DTEND;VALUE=DATE:20270320
+SUMMARY:Spring 2027: Spring recess
+TRANSP:TRANSPARENT
+DESCRIPTION:From Suffolk Law academic calendar: https://www.suffolk.edu/law
+ /academics-clinics/academic-resources/academic-calendar---law. Unofficial\
+ ; check the source.
+END:VEVENT
+BEGIN:VEVENT
+UID:fbf38c43ae33024497c6@suffolk-guides.litsa
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270410
+DTEND;VALUE=DATE:20270411
+SUMMARY:Spring 2027: Class make-up day
+TRANSP:TRANSPARENT
+DESCRIPTION:From Suffolk Law academic calendar: https://www.suffolk.edu/law
+ /academics-clinics/academic-resources/academic-calendar---law. Unofficial\
+ ; check the source.
+END:VEVENT
+BEGIN:VEVENT
+UID:0b197eb763934c372134@suffolk-guides.litsa
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270419
+DTEND;VALUE=DATE:20270420
+SUMMARY:Spring 2027: Patriots' Day\, university holiday (no classes)
+TRANSP:TRANSPARENT
+DESCRIPTION:From Suffolk Law academic calendar: https://www.suffolk.edu/law
+ /academics-clinics/academic-resources/academic-calendar---law. Unofficial\
+ ; check the source.
+END:VEVENT
+BEGIN:VEVENT
+UID:3c8d714e27a11d738b77@suffolk-guides.litsa
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270421
+DTEND;VALUE=DATE:20270422
+SUMMARY:Spring 2027: Classes follow a Monday schedule
+TRANSP:TRANSPARENT
+DESCRIPTION:From Suffolk Law academic calendar: https://www.suffolk.edu/law
+ /academics-clinics/academic-resources/academic-calendar---law. Unofficial\
+ ; check the source.
+END:VEVENT
+BEGIN:VEVENT
+UID:417c9084a171ee4eb80b@suffolk-guides.litsa
 DTSTAMP:20260101T000000Z
 DTSTART;VALUE=DATE:20270428
 DTEND;VALUE=DATE:20270429
@@ -116,7 +359,18 @@ DESCRIPTION:From Suffolk Law academic calendar: https://www.suffolk.edu/law
  ; check the source.
 END:VEVENT
 BEGIN:VEVENT
-UID:e0f12d9ef78343bb29b6@suffolk-guides.litsa
+UID:7fc55204b333272b251f@suffolk-guides.litsa
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270429
+DTEND;VALUE=DATE:20270501
+SUMMARY:Spring 2027: Reading days
+TRANSP:TRANSPARENT
+DESCRIPTION:From Suffolk Law academic calendar: https://www.suffolk.edu/law
+ /academics-clinics/academic-resources/academic-calendar---law. Unofficial\
+ ; check the source.
+END:VEVENT
+BEGIN:VEVENT
+UID:d13210c5eeb8f8e4ab08@suffolk-guides.litsa
 DTSTAMP:20260101T000000Z
 DTSTART;VALUE=DATE:20270501
 DTEND;VALUE=DATE:20270502
@@ -127,7 +381,7 @@ DESCRIPTION:From Suffolk Law academic calendar: https://www.suffolk.edu/law
  ; check the source.
 END:VEVENT
 BEGIN:VEVENT
-UID:6c7cb755600c666ae815@suffolk-guides.litsa
+UID:d3500b2d10485ccf06fd@suffolk-guides.litsa
 DTSTAMP:20260101T000000Z
 DTSTART;VALUE=DATE:20270514
 DTEND;VALUE=DATE:20270515
@@ -138,11 +392,44 @@ DESCRIPTION:From Suffolk Law academic calendar: https://www.suffolk.edu/law
  ; check the source.
 END:VEVENT
 BEGIN:VEVENT
-UID:a6d204ee50954f1b1c15@suffolk-guides.litsa
+UID:01117f2ac88f239a07b3@suffolk-guides.litsa
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270515
+DTEND;VALUE=DATE:20270516
+SUMMARY:Spring 2027: Exam make-up day
+TRANSP:TRANSPARENT
+DESCRIPTION:From Suffolk Law academic calendar: https://www.suffolk.edu/law
+ /academics-clinics/academic-resources/academic-calendar---law. Unofficial\
+ ; check the source.
+END:VEVENT
+BEGIN:VEVENT
+UID:f683803bd33ac33c6cf1@suffolk-guides.litsa
 DTSTAMP:20260101T000000Z
 DTSTART;VALUE=DATE:20270523
 DTEND;VALUE=DATE:20270524
 SUMMARY:Spring 2027: Commencement
+TRANSP:TRANSPARENT
+DESCRIPTION:From Suffolk Law academic calendar: https://www.suffolk.edu/law
+ /academics-clinics/academic-resources/academic-calendar---law. Unofficial\
+ ; check the source.
+END:VEVENT
+BEGIN:VEVENT
+UID:fb590ca36f96463d03ba@suffolk-guides.litsa
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270524
+DTEND;VALUE=DATE:20270525
+SUMMARY:Summer 2027: Summer session begins
+TRANSP:TRANSPARENT
+DESCRIPTION:From Suffolk Law academic calendar: https://www.suffolk.edu/law
+ /academics-clinics/academic-resources/academic-calendar---law. Unofficial\
+ ; check the source.
+END:VEVENT
+BEGIN:VEVENT
+UID:74f0e664a9ed26bdb6dc@suffolk-guides.litsa
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270531
+DTEND;VALUE=DATE:20270601
+SUMMARY:Summer 2027: Memorial Day\, university holiday
 TRANSP:TRANSPARENT
 DESCRIPTION:From Suffolk Law academic calendar: https://www.suffolk.edu/law
  /academics-clinics/academic-resources/academic-calendar---law. Unofficial\

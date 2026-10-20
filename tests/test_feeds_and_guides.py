@@ -16,6 +16,25 @@ class Feeds(unittest.TestCase):
         self.assertIn("SUMMARY:Spring 2027: Classes begin", ics)
         self.assertTrue(ics.startswith("BEGIN:VCALENDAR\r\n"))
 
+    def test_multi_day_event_ends_the_day_after_its_last_day(self):
+        ics = build_feeds.calendar("T", [{"term": "Fall 2026", "event": "Thanksgiving recess", "date": "2026-11-25", "end": "2026-11-27"}], "u")
+        self.assertIn("DTSTART;VALUE=DATE:20261125", ics)
+        self.assertIn("DTEND;VALUE=DATE:20261128", ics)
+
+    def test_same_event_on_two_dates_gets_two_uids(self):
+        ev = [{"term": "Spring 2027", "event": "classes follow a Monday schedule", "date": d} for d in ("2027-02-16", "2027-04-21")]
+        ics = build_feeds.calendar("T", ev, "u")
+        uids = [l for l in ics.split("\r\n") if l.startswith("UID:")]
+        self.assertEqual(len(set(uids)), 2)
+
+    def test_extra_dates_are_well_formed(self):
+        import json
+        extra = json.loads((build_feeds.ROOT / "data" / "academic-calendar-extra.json").read_text())
+        for e in extra["events"]:
+            start = dt.date.fromisoformat(e["date"])
+            self.assertGreaterEqual(dt.date.fromisoformat(e.get("end", e["date"])), start, e)
+            self.assertTrue(e["term"] and e["event"], e)
+
     def test_uid_is_stable(self):
         a = build_feeds.calendar("T", self.EVENTS, "u")
         b = build_feeds.calendar("T", self.EVENTS, "u")

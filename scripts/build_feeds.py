@@ -42,12 +42,13 @@ def fold(line: str) -> str:
 def calendar(name: str, events: list[dict], source_url: str) -> str:
     lines = ["BEGIN:VCALENDAR", "VERSION:2.0", f"PRODID:{PRODID}", "CALSCALE:GREGORIAN", "METHOD:PUBLISH",
              f"X-WR-CALNAME:{esc(name)}", "X-WR-TIMEZONE:America/New_York"]
-    for e in events:
+    for e in sorted(events, key=lambda e: (e["date"], e["event"])):
         day = dt.date.fromisoformat(e["date"])
+        last = dt.date.fromisoformat(e.get("end") or e["date"])
         summary = f"{e['term']}: {e['event'][:1].upper()}{e['event'][1:]}"
-        uid = hashlib.sha256(f"{e['term']}|{e['event']}".encode()).hexdigest()[:20] + "@suffolk-guides.litsa"
+        uid = hashlib.sha256(f"{e['term']}|{e['event']}|{e['date']}".encode()).hexdigest()[:20] + "@suffolk-guides.litsa"
         lines += ["BEGIN:VEVENT", f"UID:{uid}", "DTSTAMP:20260101T000000Z",
-                  f"DTSTART;VALUE=DATE:{day:%Y%m%d}", f"DTEND;VALUE=DATE:{day + dt.timedelta(days=1):%Y%m%d}",
+                  f"DTSTART;VALUE=DATE:{day:%Y%m%d}", f"DTEND;VALUE=DATE:{last + dt.timedelta(days=1):%Y%m%d}",
                   f"SUMMARY:{esc(summary)}", "TRANSP:TRANSPARENT",
                   f"DESCRIPTION:{esc('From Suffolk Law academic calendar: ' + source_url + '. Unofficial; check the source.')}",
                   "END:VEVENT"]
@@ -57,7 +58,12 @@ def calendar(name: str, events: list[dict], source_url: str) -> str:
 
 def outputs() -> dict[Path, str]:
     data = json.loads((ROOT / "data" / "academic-calendar.json").read_text(encoding="utf-8"))
-    return {ROOT / "feeds" / "academic-calendar.ics": calendar("Suffolk Law academic calendar (unofficial)", data["events"], data["source"]["url"])}
+    events = list(data["events"])
+    # Holidays, recesses, schedule swaps and make-up days, transcribed from the same calendar.
+    extra = ROOT / "data" / "academic-calendar-extra.json"
+    if extra.exists():
+        events += json.loads(extra.read_text(encoding="utf-8"))["events"]
+    return {ROOT / "feeds" / "academic-calendar.ics": calendar("Suffolk Law academic calendar (unofficial)", events, data["source"]["url"])}
 
 
 def main(argv: list[str]) -> int:

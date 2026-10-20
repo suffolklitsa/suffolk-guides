@@ -1,0 +1,35 @@
+{
+  "note": "Dates from Suffolk Law's 2026-2027 academic calendar (PDF dated 7-14) that the automatic import doesn't carry. Transcribed by hand; recheck against the source when Suffolk posts a new version. 'end' is the last day of a multi-day event.",
+  "source": {
+    "url": "https://www.suffolk.edu/law/academics-clinics/academic-resources/academic-calendar---law",
+    "checked_on": "2026-10-20"
+  },
+  "events": [
+    {"term": "Fall 2026", "event": "orientation", "date": "2026-08-18", "end": "2026-08-20"},
+    {"term": "Fall 2026", "event": "Labor Day, university holiday (no classes)", "date": "2026-09-07"},
+    {"term": "Fall 2026", "event": "midterms", "date": "2026-10-05", "end": "2026-10-17"},
+    {"term": "Fall 2026", "event": "Fall Holiday, university holiday (no classes)", "date": "2026-10-12"},
+    {"term": "Fall 2026", "event": "last day to apply for January 2027 graduation", "date": "2026-11-02"},
+    {"term": "Fall 2026", "event": "evening make-up classes", "date": "2026-11-06"},
+    {"term": "Fall 2026", "event": "class make-up day", "date": "2026-11-07"},
+    {"term": "Fall 2026", "event": "classes follow a Wednesday schedule", "date": "2026-11-10"},
+    {"term": "Fall 2026", "event": "Veterans Day, university holiday (no classes)", "date": "2026-11-11"},
+    {"term": "Fall 2026", "event": "Thanksgiving recess", "date": "2026-11-25", "end": "2026-11-27"},
+    {"term": "Fall 2026", "event": "reading days", "date": "2026-12-01", "end": "2026-12-03"},
+    {"term": "Fall 2026", "event": "exam snow make-up day", "date": "2026-12-18"},
+    {"term": "Spring 2027", "event": "January Intersession", "date": "2027-01-11", "end": "2027-01-15"},
+    {"term": "Spring 2027", "event": "Intersession make-up day", "date": "2027-01-16"},
+    {"term": "Spring 2027", "event": "Martin Luther King Jr. Day, university holiday (no classes)", "date": "2027-01-18"},
+    {"term": "Spring 2027", "event": "Presidents' Day, university holiday (no classes)", "date": "2027-02-15"},
+    {"term": "Spring 2027", "event": "classes follow a Monday schedule", "date": "2027-02-16"},
+    {"term": "Spring 2027", "event": "midterms", "date": "2027-02-16", "end": "2027-02-27"},
+    {"term": "Spring 2027", "event": "spring recess", "date": "2027-03-15", "end": "2027-03-19"},
+    {"term": "Spring 2027", "event": "class make-up day", "date": "2027-04-10"},
+    {"term": "Spring 2027", "event": "Patriots' Day, university holiday (no classes)", "date": "2027-04-19"},
+    {"term": "Spring 2027", "event": "classes follow a Monday schedule", "date": "2027-04-21"},
+    {"term": "Spring 2027", "event": "reading days", "date": "2027-04-29", "end": "2027-04-30"},
+    {"term": "Spring 2027", "event": "exam make-up day", "date": "2027-05-15"},
+    {"term": "Summer 2027", "event": "summer session begins", "date": "2027-05-24"},
+    {"term": "Summer 2027", "event": "Memorial Day, university holiday", "date": "2027-05-31"}
+  ]
+}
