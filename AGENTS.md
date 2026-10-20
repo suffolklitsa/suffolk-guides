@@ -18,6 +18,7 @@ python3 -m unittest discover -s tests
 
 ## Rules for this repo
 
+- **Branches:** work from `staging` and open pull requests against it. Never target `main`; maintainers promote `staging` to `main`.
 - **An agent can't write a guide on its own.** Guides describe steps a person actually followed on the real system. You can help format, tighten wording or check links, but never invent steps, button names or office details. Leave `status: draft`; only a person who walked through the steps marks a guide `reviewed`.
 - **Every guide links its official sources** in front matter.
 - **Never edit `feeds/*.ics` by hand;** change `data/` or `scripts/build_feeds.py` and rebuild.
