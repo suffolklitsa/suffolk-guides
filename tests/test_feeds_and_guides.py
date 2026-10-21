@@ -1,9 +1,31 @@
 import datetime as dt
+import json
+import re
 import tempfile
 import unittest
 from pathlib import Path
 
 from scripts import build_feeds, check_guides, import_calendar
+
+# Term windows from the academic calendar: Fall July-December, Spring January-May,
+# Summer May-August. May belongs to both Spring and Summer.
+_TERM = re.compile(r"^(Fall|Spring|Summer) (\d{4})$")
+_FOLLOW = re.compile(r"classes follow a (\w+) schedule", re.IGNORECASE)
+_TERM_MONTHS = {"Fall": range(7, 13), "Spring": range(1, 6), "Summer": range(5, 9)}
+_WEEKDAYS = ("Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday")
+_CALENDARS = ("academic-calendar.json", "academic-calendar-extra.json")
+
+
+def _calendar_events():
+    root = build_feeds.ROOT / "data"
+    for name in _CALENDARS:
+        data = json.loads((root / name).read_text(encoding="utf-8"))
+        for event in data["events"]:
+            yield name, event
+
+
+def _when(event, day):
+    return f"{event['event']} on {day.isoformat()}"
 
 
 class Feeds(unittest.TestCase):
@@ -28,12 +50,70 @@ class Feeds(unittest.TestCase):
         self.assertEqual(len(set(uids)), 2)
 
     def test_extra_dates_are_well_formed(self):
-        import json
         extra = json.loads((build_feeds.ROOT / "data" / "academic-calendar-extra.json").read_text())
         for e in extra["events"]:
             start = dt.date.fromisoformat(e["date"])
             self.assertGreaterEqual(dt.date.fromisoformat(e.get("end", e["date"])), start, e)
             self.assertTrue(e["term"] and e["event"], e)
+
+    def test_dates_are_inside_their_term(self):
+        for _name, event in _calendar_events():
+            match = _TERM.fullmatch(event["term"])
+            self.assertIsNotNone(
+                match, f"{event['event']} on {event['date']} has term {event['term']!r}"
+            )
+            season, year = match.group(1), int(match.group(2))
+            for key in ("date", "end"):
+                if key not in event:
+                    continue
+                day = dt.date.fromisoformat(event[key])
+                self.assertEqual(
+                    day.year, year, f"{_when(event, day)} is not in {event['term']}"
+                )
+                self.assertIn(
+                    day.month,
+                    _TERM_MONTHS[season],
+                    f"{_when(event, day)} is outside {event['term']}",
+                )
+
+    def test_university_holidays_are_not_weekends(self):
+        checked = 0
+        for _name, event in _calendar_events():
+            if "university holiday" not in event["event"].lower():
+                continue
+            day = dt.date.fromisoformat(event["date"])
+            checked += 1
+            self.assertLess(day.weekday(), 5, f"{_when(event, day)} is on a weekend")
+        self.assertGreater(checked, 0, "no university holiday events to check")
+
+    def test_schedule_swap_is_not_already_that_day(self):
+        checked = 0
+        for _name, event in _calendar_events():
+            match = _FOLLOW.search(event["event"])
+            if not match:
+                continue
+            day = dt.date.fromisoformat(event["date"])
+            wanted = match.group(1).capitalize()
+            checked += 1
+            self.assertIn(wanted, _WEEKDAYS, f"{_when(event, day)} names an unknown weekday")
+            self.assertNotEqual(
+                _WEEKDAYS[day.weekday()],
+                wanted,
+                f"{_when(event, day)} is already a {wanted}",
+            )
+        self.assertGreater(checked, 0, "no 'classes follow a <Day> schedule' events to check")
+
+    def test_event_is_not_in_both_calendar_files(self):
+        seen = {}
+        found = set()
+        for name, event in _calendar_events():
+            found.add(name)
+            key = (event["term"], event["event"], event["date"])
+            other = seen.get(key)
+            if other is not None and other != name:
+                self.fail(f"{event['event']} on {event['date']} is in both {other} and {name}")
+            seen[key] = name
+        self.assertEqual(found, set(_CALENDARS))
 
     def test_uid_is_stable(self):
         a = build_feeds.calendar("T", self.EVENTS, "u")
