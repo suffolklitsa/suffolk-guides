@@ -95,6 +95,14 @@ class Guides(unittest.TestCase):
         p = check_guides.GUIDES / "_TEMPLATE.md"
         self.assertEqual([e for e in self._run(p) if "broken link" in e], [])
 
+    def test_http_link_in_body(self):
+        bad = GOOD + "\nSee [old page](http://example.com/page).\n"
+        errs = self.check(bad)
+        self.assertTrue(
+            any("http://example.com/page" in e and "should use https" in e for e in errs),
+            errs,
+        )
+
 
 if __name__ == "__main__":
     unittest.main()
