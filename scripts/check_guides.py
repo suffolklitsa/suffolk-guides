@@ -53,6 +53,12 @@ def problems(path: Path, today: dt.date) -> list[str]:
     for src in fm.get("sources", []) if isinstance(fm.get("sources"), list) else []:
         if not src.startswith("https://"):
             out.append(f"{name}: source {src!r} should be an https link")
+    body = text
+    fm_match = re.match(r"^---\n.*?\n---\n", text, re.S)
+    if fm_match:
+        body = text[fm_match.end() :]
+    for url in re.findall(r"\]\((http://[^)]+)\)", body):
+        out.append(f"{name}: link {url!r} should use https")
     for target in re.findall(r"\]\((?!https?://|mailto:|#)([^)]+)\)", text):
         if not (path.parent / target.split("#")[0]).exists():
             out.append(f"{name}: broken link {target}")
